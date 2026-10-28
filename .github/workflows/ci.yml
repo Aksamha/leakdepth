@@ -1,0 +1,27 @@
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: python -m pip install --upgrade pip && pip install -e ".[dev]"
+      - name: Lint
+        run: ruff check src tests bench
+      - name: Test
+        run: pytest --cov --cov-report=term --cov-fail-under=90
+      - name: CLI smoke test
+        run: |
+          python -c "from leakdepth.inject import plant; p = plant('host', 0.05, 0, n_sessions=300); p.train.to_csv('tr.csv', index=False); p.test.to_csv('te.csv', index=False)"
+          leakdepth audit tr.csv --test te.csv --label label --src src_ip --dst dst_ip --sport src_port --dport dst_port --time ts --capture day --out-json a.json --quiet
+          if leakdepth gate a.json --fail-on WARN --quiet; then echo "expected a failing gate"; exit 1; fi
