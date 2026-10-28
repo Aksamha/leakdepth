@@ -1,0 +1,96 @@
+{
+ "positive": [
+  {
+   "direction": "Ahuja in IoT-DH v1",
+   "matched": 104345,
+   "n": 104345,
+   "C": 1.0,
+   "lo": 0.9999631863778554,
+   "hi": 1.0,
+   "meets": true
+  },
+  {
+   "direction": "IoT-DH v1 in Ahuja",
+   "matched": 1356,
+   "n": 200000,
+   "C": 0.00678,
+   "lo": 0.0064297097292076045,
+   "hi": 0.007149236750077224,
+   "meets": null
+  }
+ ],
+ "negative": [
+  {
+   "direction": "Ahuja in karmous",
+   "matched": 1496,
+   "n": 104345,
+   "C": 0.01434,
+   "lo": 0.013633441423207026,
+   "hi": 0.015076426524899966,
+   "meets": false
+  },
+  {
+   "direction": "karmous in Ahuja",
+   "matched": 89507,
+   "n": 200000,
+   "C": 0.44754,
+   "lo": 0.4453568189001948,
+   "hi": 0.44971519648246544,
+   "meets": false
+  },
+  {
+   "direction": "Ahuja in snt",
+   "matched": 2681,
+   "n": 104345,
+   "C": 0.02569,
+   "lo": 0.024750929272197252,
+   "hi": 0.02667121767073956,
+   "meets": false
+  },
+  {
+   "direction": "snt in Ahuja",
+   "matched": 6993,
+   "n": 200000,
+   "C": 0.03497,
+   "lo": 0.034168842786787806,
+   "hi": 0.03577902099812405,
+   "meets": false
+  },
+  {
+   "direction": "Ahuja in ukm",
+   "matched": 0,
+   "n": 104345,
+   "C": 0.0,
+   "lo": 0.0,
+   "hi": 3.681362214462232e-05,
+   "meets": true
+  },
+  {
+   "direction": "ukm in Ahuja",
+   "matched": 0,
+   "n": 35865,
+   "C": 0.0,
+   "lo": 0.0,
+   "hi": 0.00010709737656579517,
+   "meets": true
+  },
+  {
+   "direction": "CIC-IDS2017 in UNSW-NB15",
+   "matched": 0,
+   "n": 200000,
+   "C": 0.0,
+   "lo": 0.0,
+   "hi": 1.920692519040967e-05,
+   "meets": true
+  },
+  {
+   "direction": "UNSW-NB15 in CIC-IDS2017",
+   "matched": 0,
+   "n": 200000,
+   "C": 0.0,
+   "lo": 0.0,
+   "hi": 1.920692519040967e-05,
+   "meets": true
+  }
+ ]
+}
