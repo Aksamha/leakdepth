@@ -1,0 +1,22 @@
+{
+  "title": "leakdepth: split-unit leakage audits and a cross-corpus lineage screen for network intrusion-detection datasets",
+  "upload_type": "software",
+  "version": "0.1.3",
+  "description": "Python library and command-line tool that derives split units (duplicate, 5-tuple, host pair, session, capture) from flow metadata, audits train/test splits per unit and reports split validity, compares scores across units with class-composition controls, gates continuous-integration jobs on the result, ships a synthetic leakage-injection benchmark with a cross-tool harness, and includes a cross-corpus lineage screen that is not a provenance test. Version 0.1.3 reports, next to each lineage containment, the other matcher's result and a within-corpus baseline, and flags group-bootstrap intervals over fewer than 10 groups. Known limits are documented in README.md and docs/lineage_controls.md.",
+  "creators": [
+    {
+      "name": "Samha, Amani K.",
+      "affiliation": "King Saud University"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "data leakage",
+    "intrusion detection",
+    "dataset audit",
+    "group splits",
+    "dataset lineage",
+    "evaluation methodology"
+  ],
+  "access_right": "open"
+}
