@@ -12,7 +12,8 @@
 | New negative controls (A12), threshold-free lineage measure, bootstrap intervals, cross-tool rerun with 0.1.1 | `nb5_further_validation.ipynb` | `results/nb5_summary.json` (copy from the run's output folder), `results/nb5_B_summary.json` |
 | Read-only diagnostic of the failing negative controls (A13), interval recompute after the 0.1.2 fix | `nb6_diagnose_lineage.ipynb` | `results/nb6_summary.json` (copy from the run's output folder), `docs/lineage_controls.md` |
 | Imperfect-metadata benchmark (A14), timed audits, exploratory label/overlap check (A13-D1) | `nb7_imperfect_metadata.ipynb` | `results/nb7_summary.json` (copy from the run's output folder) |
-| Sensitivity with ten seeds, Holm and Bonferroni (A15) | `nb8_sensitivity_10seeds.ipynb` | `results/nb8_summary.json` (copy from the run's output folder) |
+| Sensitivity with ten seeds, Holm and Bonferroni (A15) | `nb8_sensitivity_10seeds.ipynb` | `results/nb8_summary.json` (summary of the run) |
+| Paper figures 2 and 3 | `python reproduce/make_fig_architecture.py docs/figures`; `python reproduce/make_fig_sensitivity_a15.py results/nb8_summary.json docs/figures` | `docs/figures/` |
 | Sensitivity figure and lineage-control intervals | `python reproduce/make_fig_sensitivity.py` | `docs/figures/`, `results/lineage_controls_wilson.json` |
 
 The notebooks embed the exact wheel they test (SHA-256 checked) and read data from Google Drive folders whose paths
