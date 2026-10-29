@@ -3,6 +3,7 @@
 [![CI](https://github.com/Aksamha/leakdepth/actions/workflows/ci.yml/badge.svg)](https://github.com/Aksamha/leakdepth/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Python](https://img.shields.io/badge/python-3.10%E2%80%933.13-blue.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23762930.svg)](https://doi.org/10.5281/zenodo.23762930)
 
 Split-unit leakage audits for security machine-learning datasets.
 
@@ -149,7 +150,7 @@ If you use leakdepth, please cite it (details in `CITATION.cff`; GitHub shows th
 
 > Samha, A. K. (2026). *leakdepth: split-unit leakage audits and a cross-corpus lineage screen for network
 > intrusion-detection datasets* (Version 0.1.3) [Computer software]. https://github.com/Aksamha/leakdepth.
-> Archived at Zenodo, DOI [ZENODO DOI].
+> Archived at Zenodo, https://doi.org/10.5281/zenodo.23762930.
 
 MIT licence (`LICENSE`; identical copy in `Licence.txt`). Source: https://github.com/Aksamha/leakdepth.
 
